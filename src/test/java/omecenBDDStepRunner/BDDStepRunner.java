@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 	        plugin= {"pretty","html:target/CucumberReport.html","json:target/cucumber-report.json"},
 	        snippets=SnippetType.CAMELCASE,        
 	        features="src/test/resources/Features",
-	                tags="@loginScenarioOutlin",
+	                tags="@loginScenarioOutline",
 	        glue= {"omecenBDDSteps"},
 	        monochrome = true,
 	        dryRun=false
