@@ -9,6 +9,8 @@ Feature: Login Secenario Outline
     And validate successfully login message
 
     Examples: 
-      | userName | password      |
-      | 'admin'  | 'admin_test'  |
-      | 'admin1' | 'admin_test1' |
+      | userName | password          |
+      | 'admin'  | 'admin_test'      |
+      | 'admin1' | 'admin_test1'     |
+      | 'admin1' | ''                |
+      | 'admin1' | 'admin_test11111' |

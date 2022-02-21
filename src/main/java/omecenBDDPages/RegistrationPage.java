@@ -74,6 +74,12 @@ public class RegistrationPage {
 		return userCompN;
 	}
 	
+	@FindBy(how=How.XPATH, using = "//select[starts-with(@id,'CompanyCountry')]")private WebElement userCompCountryN;
+	public WebElement compCountryName() {
+		userCompCountryN.click();
+		return userCompCountryN;
+	}
+	
 	@FindBy(how=How.XPATH, using = "//select[starts-with(@id,'CompanyCountry')]/option[2]")private WebElement userCompCountry;
 	public WebElement compCountry() {
 		userCompCountry.click();
@@ -81,7 +87,7 @@ public class RegistrationPage {
 		
 	}	
 	
-	@FindBy(how=How.XPATH, using = "(//*[starts-with(@class,'checkbox')] )[1]")private WebElement userAgreement;
+	@FindBy(how=How.XPATH, using = "(//div[starts-with(@class,'checkbox')] )[1]")private WebElement userAgreement;
 	public WebElement subAgreement() {
 		userAgreement.click();
 		return userAgreement;

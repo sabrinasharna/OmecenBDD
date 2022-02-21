@@ -21,9 +21,9 @@ public class LoginStep{
 	public void user_open_application() {
 		browserFactory= new BrowserFactory();
 		driver=browserFactory.getDriver();
-		//LoginPage lp= new LoginPage(driver);
+		LoginPage lp= new LoginPage(driver);
 		
-		//lp.userName("admin");
+		lp.userName("admin");
 	    
 	}
 

@@ -38,6 +38,7 @@ public class RegistrationStep {
 		registrationPage.getCompEmpl();
 		registrationPage.getEmpOpt();
 		registrationPage.compName("ABC Company");
+		registrationPage.compCountryName();
 		registrationPage.compCountry();
 		registrationPage.subAgreement();
 		//registrationPage.freeTrial();
