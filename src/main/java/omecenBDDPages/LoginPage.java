@@ -22,5 +22,19 @@ public class LoginPage {
 		uName.sendKeys(enterYourUserName);
 		return uName;
 	}
+	
+	@FindBy(how=How.XPATH,using="//input[starts-with(@id,'password')]")private WebElement uPass;
+	public WebElement getPassword(String enterYourpassword ) {
+		uPass.sendKeys(enterYourpassword );
+		return uPass;
 }
+	
+	@FindBy(how=How.XPATH,using="//input[starts-with(@id,'Login')]") private WebElement login;
+    public WebElement getLogin() {
+        login.click();
+        return login;
+    }
+    
+ 
 
+}
